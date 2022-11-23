@@ -4,9 +4,11 @@
 # 不忽略cpp/h/ui/qss文件
 !*cpp
 !*h
+!*pro
 !*ui
 !*qss
 
 #不忽略素材文件
 !/AppData
 !/image
+!/docs
