@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>XTU 课程管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/image/xtu_blue.png</normaloff>:/image/xtu_blue.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Login
+{
+border-image: url(:/image/login_background.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="login_box" native="true">
+   <property name="geometry">
+    <rect>
+     <x>395</x>
+     <y>70</y>
+     <width>180</width>
+     <height>210</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:rgba(255, 255, 255,200);
+border-radius: 15px;</string>
+   </property>
+   <widget class="QPushButton" name="login">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>128</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(0, 170, 255,180);
+border-radius: 12px;
+color:white;
+font:12px</string>
+    </property>
+    <property name="text">
+     <string>登陆</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>160</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(0, 170, 255,180);
+border-radius: 12px;
+color:white;
+font:12px</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>15</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/image/xtu_blue.png);
+background-color: rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>58</x>
+      <y>24</y>
+      <width>105</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(255, 255, 255,0);
+color:black;
+font:12px;</string>
+    </property>
+    <property name="text">
+     <string>XTU 课程管理系统</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forget">
+    <property name="geometry">
+     <rect>
+      <x>122</x>
+      <y>188</y>
+      <width>45</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:grey;
+font:7px;
+background:rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string>忘记密码?</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="read">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>188</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:grey;
+font:7px;
+background:rgba(255, 255, 255,0);</string>
+    </property>
+    <property name="text">
+     <string>登陆即代表您同意《使用条款》</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>62</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 6px;
+background-color: rgba(247,247,247,180);
+color:rgb(183, 183, 183);
+font:14px</string>
+    </property>
+    <widget class="QLineEdit" name="user">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>4</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 3px;
+background-color: rgba(255,255,255,0);
+color:rgb(183, 183, 183);
+font:11px</string>
+     </property>
+     <property name="inputMask">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>18</number>
+     </property>
+     <property name="placeholderText">
+      <string>请输入账号</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>95</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 6px;
+background-color: rgba(247,247,247,180);
+color:rgb(183, 183, 183);
+font:14px</string>
+    </property>
+    <widget class="QLineEdit" name="password">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>4</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 3px;
+background-color: rgba(255,255,255,0);
+color:rgb(183, 183, 183);
+font:11px</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>18</number>
+     </property>
+     <property name="placeholderText">
+      <string>请输入密码</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

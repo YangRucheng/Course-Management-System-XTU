@@ -1,0 +1,17 @@
+QCheckBox::indicator {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/image/unchecked_checkBox.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/image/checked_checkBox.png);
+}
+
+QMainWindows {
+    background-color: rgb(255, 255, 255);
+}
