@@ -4,4 +4,4 @@
 
 > 湘潭大学C语言程序设计 下学期期末作业
 
-[PPT展示](https://yangrucheng.eu.org/Course-management-system-XTU/)
+[PPT展示](https://yangrucheng.github.io/XTU-Course-Management-System/)
